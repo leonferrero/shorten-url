@@ -1,0 +1,21 @@
+spring:
+  output:
+    ansi:
+      enabled: always
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+    static-path-pattern: /static/**
+logging:
+  level:
+    root: INFO
+    org.springframework.web: ERROR
+    com.demo: ERROR
+    org.hibernate: ERROR
+server:
+  port: 80
+  error:
+    include-stacktrace: never
+    include-binding-errors: never
+    include-exception: off
